@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONA GENERAL STORES - Online Sales</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>MONA GENERAL STORES</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li class="cart-wrapper">
+            <a href="javascript:void(0)" id="cart-toggle" class="cart-link">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-count">0</span>
+            </a>
+            <!-- Mini Cart Dropdown -->
+            <div id="mini-cart" class="mini-cart">
+              <h4>Your Cart</h4>
+              <div id="mini-cart-items"></div>
+              <p>Total: $<span id="mini-cart-total">0.00</span></p>
+              <div class="mini-cart-actions">
+                <button id="mini-clear-cart">Clear</button>
+                <a href="#cart" class="btn">Go to Cart</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to MONA GENERAL STORES</h2>
+      <p>Your one-stop shop for high-quality gases and general products. Shop online with ease!</p>
+      <a href="#products" class="btn">Browse Products</a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <!-- Gases -->
+        <div class="product-category">
+          <h3>Gases</h3>
+          <div class="product" data-id="1" data-name="Oxygen Cylinder" data-price="50.00">
+            <img src="https://via.placeholder.com/300x200?text=Oxygen+Cylinder" alt="Oxygen Cylinder">
+            <h4>Oxygen Cylinder</h4>
+            <p>High-purity oxygen for industrial or medical use. $50.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product" data-id="2" data-name="Nitrogen Gas" data-price="40.00">
+            <img src="https://via.placeholder.com/300x200?text=Nitrogen+Gas" alt="Nitrogen Gas">
+            <h4>Nitrogen Gas</h4>
+            <p>Inert gas for various applications. $40.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product" data-id="3" data-name="Helium Balloon Kit" data-price="25.00">
+            <img src="https://via.placeholder.com/300x200?text=Helium+Balloon+Kit" alt="Helium Balloon Kit">
+            <h4>Helium Balloon Kit</h4>
+            <p>Fun helium for parties. $25.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <!-- General Products -->
+        <div class="product-category">
+          <h3>General Products</h3>
+          <div class="product" data-id="4" data-name="Tool Set" data-price="30.00">
+            <img src="https://via.placeholder.com/300x200?text=Tool+Set" alt="Tool Set">
+            <h4>Tool Set</h4>
+            <p>Essential tools for home use. $30.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product" data-id="5" data-name="Cleaning Supplies" data-price="15.00">
+            <img src="https://via.placeholder.com/300x200?text=Cleaning+Supplies" alt="Cleaning Supplies">
+            <h4>Cleaning Supplies</h4>
+            <p>Multi-purpose cleaners. $15.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product" data-id="6" data-name="Office Stationery" data-price="10.00">
+            <img src="https://via.placeholder.com/300x200?text=Office+Stationery" alt="Office Stationery">
+            <h4>Office Stationery</h4>
+            <p>Pens, paper, and more. $10.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Cart -->
+  <section id="cart">
+    <div class="container">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button id="clear-cart">Clear Cart</button>
+      <button id="checkout">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-icons">
+        <a href="tel:+1234567890" class="bounce"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank" class="bounce"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+      <p>WhatsApp: <a href="https://wa.me/1234567890" target="_blank">+123 456 7890</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MONA GENERAL STORES. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
